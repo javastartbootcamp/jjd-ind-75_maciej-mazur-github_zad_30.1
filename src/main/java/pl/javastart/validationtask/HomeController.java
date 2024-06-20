@@ -11,6 +11,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("data", new RegisterFormDto());
+        System.out.println();
         return "home";
     }
 
